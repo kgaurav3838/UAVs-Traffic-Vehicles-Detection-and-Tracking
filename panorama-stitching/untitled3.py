@@ -4,31 +4,3 @@ Created on Thu Feb 27 22:30:04 2020
 
 @author: kumar
 """
-
-import argparse
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument('number1', type=int, help="first number")
-    parser.add_argument('number2', type=int, help="second number")
-    parser.add_argument('operation',  help="operations", choices=['add','subtract','multiply'])
-
-    args = parser.parse_args()
-    #args = vars(parser.parse_args())
-
-    print("Number 1=",args.number1)
-    print("Number 2=",args.number2)
-    print("Operation=",args.operation)
-
-    n1=args.number1
-    n2=args.number2
-    result = None
-    if args.operation == 'add':
-        result=n1+n2
-    elif args.operation == 'subtract':
-        result=n1-n2
-    elif args.operation == 'multiply':
-        result=n1*n2
-
-
-    print("Result:",result)

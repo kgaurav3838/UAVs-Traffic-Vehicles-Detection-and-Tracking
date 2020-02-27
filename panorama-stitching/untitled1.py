@@ -20,19 +20,19 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     #args = vars(parser.parse_args())
-"""
+
     print(args.number1)
     print(args.number2)
     print(args.operation)
-"""
-    n1=args.number1
-    n2 = args["number2"]
+
+    n1= int(args.number1)
+    n2 = int(args.number2)
     result = None
-    if args["operation"] == "add":
+    if args.operation == "add":
         result=n1+n2
-    elif args["operation"] == "subtract":
+    elif args.operation == "subtract":
         result=n1-n2
-    elif args["operation"] == "multiply":
+    elif args.operation== "multiply":
         result=n1*n2
 
 

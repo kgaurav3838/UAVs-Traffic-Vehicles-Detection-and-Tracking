@@ -24,6 +24,7 @@ stitcher = cv2.createStitcher()
 #stitcher = cv2.Stitcher.create()
 ret,pano = stitcher.stitch(images)
 
+
 if ret==cv2.STITCHER_OK:
     cv2.imshow('Panorama',pano)
     cv2.waitKey()

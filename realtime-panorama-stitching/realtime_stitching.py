@@ -1,5 +1,5 @@
 # USAGE
-# python realtime_stitching.py
+# python realtime_stitching.py  # Video Stitching
 
 # import the necessary packages
 from __future__ import print_function
@@ -11,6 +11,7 @@ import datetime
 import imutils
 import time
 import cv2
+
 
 # initialize the video streams and allow them to warmup
 print("[INFO] starting videos...")

@@ -30,4 +30,4 @@ if ret==cv2.STITCHER_OK:
     cv2.destroyAllWindows()
 else:
     print("Error during Stitching")
-    
+

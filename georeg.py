@@ -13,6 +13,7 @@ x,y,k,phi,ome,X,Y,Z,X0,Y0,Z0,x0,y0=sy.symbols('x y k phi ome X Y Z X0 Y0 Z0 x0 y
 
 #f is focal length
 f=151.876
+
 # A,B,C,D,E are GCP
 # format of input data ,point=[photo_x,photo_y,_ground_x,ground_y,ground_z]
 

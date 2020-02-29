@@ -1,4 +1,5 @@
 import cv2
+import time
 
 video1= "R:/My Files/OneDrive - IIT Kanpur/Video Data/Airstrip test/Drone 1/DJI_0006.MOV"
 cap = cv2.VideoCapture(video1)

@@ -8,7 +8,7 @@ Created on Sat Dec 21 17:42:39 2019
 # Python program to explain cv2.imshow() method 
 
 import cv2
-
+import numpy as np
 #Read the images from your directory
 dim=(1024,768)
 left=cv2.imread('S2.jpg',cv2.IMREAD_COLOR)  # Left Image

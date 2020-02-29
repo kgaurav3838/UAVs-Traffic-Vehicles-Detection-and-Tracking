@@ -1,6 +1,6 @@
 import numpy as np
 from matplotlib import pyplot as plt, cm
-
+from mpl_toolkits.mplot3d import axes3d
 
 def getMesh( minVal, maxVal, numTicsX, numTicsY ):
     x = np.linspace( minVal, maxVal, numTicsX )

@@ -3,15 +3,14 @@
 
 # import the necessary packages
 from __future__ import print_function
-
-import datetime
-import time
-
-import cv2
-# from imutils.video import VideoStream
-import numpy as np
 from imagesearch.basicmotiondetector import BasicMotionDetector
 from imagesearch.panorama import Stitcher
+# from imutils.video import VideoStream
+import numpy as np
+import datetime
+import imutils
+import time
+import cv2
 
 # initialize the video streams and allow them to warmup
 print("[INFO] starting videos...")

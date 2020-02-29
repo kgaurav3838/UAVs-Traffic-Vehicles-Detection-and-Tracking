@@ -5,9 +5,10 @@ Created on Fri Jan 17 22:56:41 2020
 @author: KGaurav
 """
 
-import numpy as np
-import sympy as sy
 
+import math
+import sympy as sy
+import numpy as np
 x,y,k,phi,ome,X,Y,Z,X0,Y0,Z0,x0,y0=sy.symbols('x y k phi ome X Y Z X0 Y0 Z0 x0 y0')
 
 #f is focal length

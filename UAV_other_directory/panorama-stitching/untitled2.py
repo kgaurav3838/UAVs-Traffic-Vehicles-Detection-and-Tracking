@@ -9,10 +9,10 @@ Created on Thu Feb 27 22:14:48 2020
 # python untitled2.py --first images/bryce_left_01.png --second images/bryce_right_01.png 
 
 # import the necessary packages
+from pyimagesearch.panorama import Stitcher
 import argparse
-
-import cv2
 import imutils
+import cv2
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()

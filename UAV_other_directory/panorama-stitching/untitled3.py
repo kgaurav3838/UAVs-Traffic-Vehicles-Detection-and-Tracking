@@ -4,6 +4,7 @@ Created on Thu Feb 27 22:30:04 2020
 
 @author: kumar
 """
+import numpy as np
 import cv2
 
 cap1 = cv2.VideoCapture('first.mp4')

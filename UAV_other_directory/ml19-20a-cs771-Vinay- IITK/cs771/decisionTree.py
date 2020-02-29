@@ -8,11 +8,9 @@
     Give skeletal support for implementing decision trees as well as plotting them in toy 2D settings
 '''
 
-import warnings
-
 import numpy as np
 from matplotlib import pyplot as plt
-
+import warnings
 
 class Node:
     # A node stores its own depth (root = depth 0), its decision stump, its parent and child information

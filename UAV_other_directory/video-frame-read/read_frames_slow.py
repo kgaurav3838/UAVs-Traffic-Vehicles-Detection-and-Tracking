@@ -1,13 +1,12 @@
 # USAGE
 # python read_frames_slow.py --video videos/jurassic_park_intro.mp4
 
-import argparse
-
-import cv2
-import imutils
-import numpy as np
 # import the necessary packages
 from imutils.video import FPS
+import numpy as np
+import argparse
+import imutils
+import cv2
 
 # construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()

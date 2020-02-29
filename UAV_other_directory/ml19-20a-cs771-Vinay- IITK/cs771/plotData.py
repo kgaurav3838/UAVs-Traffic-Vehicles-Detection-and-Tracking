@@ -8,9 +8,9 @@
     Plot 2D data in various ways to visualize classifiers and other things
 '''
 
-import numpy as np
 from matplotlib import pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap as lsc
+import numpy as np
 
 # A light red and light green binary colormap
 binaryColors = [ (1, 0.85, 0.85), (0.85, 1, 0.85) ]

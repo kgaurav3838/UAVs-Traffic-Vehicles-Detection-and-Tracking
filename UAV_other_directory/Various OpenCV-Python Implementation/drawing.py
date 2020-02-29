@@ -1,6 +1,6 @@
 import cv2
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 
 blankImg = np.zeros((512, 512, 3), dtype=np.int16)
 plt.imshow(blankImg)

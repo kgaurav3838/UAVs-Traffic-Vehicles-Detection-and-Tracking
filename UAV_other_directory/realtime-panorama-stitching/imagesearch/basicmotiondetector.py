@@ -1,7 +1,6 @@
 # import the necessary packages
-import cv2
 import imutils
-
+import cv2
 
 class BasicMotionDetector:
 	def __init__(self, accumWeight=0.5, deltaThresh=5, minArea=5000):

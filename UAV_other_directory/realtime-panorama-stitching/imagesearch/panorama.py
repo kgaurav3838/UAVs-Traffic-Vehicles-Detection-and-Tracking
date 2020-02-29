@@ -1,8 +1,7 @@
 # import the necessary packages
-import cv2
-import imutils
 import numpy as np
-
+import imutils
+import cv2
 
 class Stitcher:
 	def __init__(self):

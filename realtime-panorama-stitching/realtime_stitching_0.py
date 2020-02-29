@@ -1,10 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Feb 21 17:42:39 2020
-
 @author: KGaurav
 """
-
 # python realtime_stitching.py  # Video Stitching
 
 # import the necessary packages

@@ -1,16 +1,21 @@
-# USAGE
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Feb 20 18:21:30 2020
+@author: KGaurav
+"""
 # python realtime_stitching.py  # Video Stitching
 
 # import the necessary packages
 from __future__ import print_function
-from imagesearch.basicmotiondetector import BasicMotionDetector
-from imagesearch.panorama import Stitcher
+
+import datetime
+import time
+
+import cv2
 # from imutils.video import VideoStream
 import numpy as np
-import datetime
-import imutils
-import time
-import cv2
+from imagesearch.basicmotiondetector import BasicMotionDetector
+from imagesearch.panorama import Stitcher
 
 # initialize the video streams and allow them to warmup
 print("[INFO] starting videos...")

@@ -19,18 +19,26 @@ args = vars(ap.parse_args())
 # (for faster processing)
 imageA = cv2.imread(args["first"])
 imageB = cv2.imread(args["second"])
-imageA = imutils.resize(imageA, width=400)
-imageB = imutils.resize(imageB, width=400)
+while True:
+    imageA = imutils.resize(imageA, width=800)
+    imageB = imutils.resize(imageB, width=800)
 
 # stitch the images together to create a panorama
-stitcher = Stitcher()
-(result, vis) = stitcher.stitch([imageA, imageB], showMatches=True)
+    stitcher = Stitcher()
+    (result, vis) = stitcher.stitch([imageA, imageB], showMatches=True)
 
 # show the images
-cv2.imshow("Image A", imageA)
-cv2.imshow("Image B", imageB)
-cv2.imshow("Keypoint Matches", vis)
-cv2.imshow("Result", result)
+    cv2.imshow("Image A", imageA)
+    cv2.imshow("Image B", imageB)
+    cv2.imshow("Keypoint Matches", vis)
+    cv2.imshow("Result", result)
 #Save output imgage
-cv2.imwrite(args["output"], result)
-cv2.waitKey(0)
+    cv2.imwrite(args["output"], result)
+#cv2.waitKey(0)  # Press any key to break or exit
+    key = cv2.waitKey(1) & 0xFF
+# if the `q` key was pressed, break from the loop
+    if key == ord("q"):
+        break
+
+
+

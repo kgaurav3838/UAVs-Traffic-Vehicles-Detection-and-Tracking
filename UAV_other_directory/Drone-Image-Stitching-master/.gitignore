@@ -1,0 +1,13 @@
+build
+dist
+
+*.spec
+
+*.pyc
+
+*.jpg
+
+*.JPG
+
+*.png
+*.zip

@@ -3,7 +3,7 @@
 Created on Sat Dec 21 17:42:39 2019
 @author: KGaurav
 """
-# Python program to explain cv2.imshow() method 
+# Python program to stitch two images.
 
 import cv2
 

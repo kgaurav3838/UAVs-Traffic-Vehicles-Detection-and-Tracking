@@ -4,7 +4,6 @@ Created on Sat Feb 21 17:42:39 2020
 @author: KGaurav
 """
 # python realtime_stitching.py  # Video Stitching
-
 # import the necessary packages
 from __future__ import print_function
 
@@ -26,12 +25,13 @@ print("[INFO] starting videos...")
 #video1= "R:/My Files/OneDrive - IIT Kanpur\IITK OneDrive\Videos/video-data-2/2.mp4"   # Work
 #video2= "R:/My Files/OneDrive - IIT Kanpur/IITK OneDrive/Videos/video-data-2/3.mp4"  # Work
 #video1= "E:/OneDrive - IIT Kanpur/Video Data/Airstrip test/Drone 1/DJI_0006.MOV"  # Home
-#video2= "E:/OneDrive - IIT Kanpur/Video Data/Airstrip test/Drone 2/DJI_0152.MOV"
-video1= "R:/My Files/OneDrive - IIT Kanpur/Video Data/Airstrip test/Drone 1/DJI_0006.MOV"  # Work
-video2= "R:/My Files//OneDrive - IIT Kanpur/Video Data/Airstrip test/Drone 2/DJI_0152.MOV"
+#video2= "E:/OneDrive - IIT Kanpur/Video Data/Airstrip test/Drone 2/DJI_0152.MOV"  # Home
+#video1= "R:/My Files/OneDrive - IIT Kanpur/Video Data/Airstrip test/Drone 1/DJI_0006.MOV"  # Work
+#video2= "R:/My Files//OneDrive - IIT Kanpur/Video Data/Airstrip test/Drone 2/DJI_0152.MOV"
 #video1= "E:/OneDrive - IIT Kanpur/IITK OneDrive/Videos/video-data-3/first.mp4"
 #video2= "E:/OneDrive - IIT Kanpur/IITK OneDrive/Videos/video-data-3/third.mp4"
-
+video1 = "R:/My Files/OneDrive - IIT Kanpur/Video Data/DJI 19 march GT Road/First Testing/2nd Drone/DJI_0001.MP4"
+video2 = "R:/My Files/OneDrive - IIT Kanpur/Video Data/DJI 19 march GT Road/First Testing/3nd Drone/DJI_0001.MP4"
 leftStream = VideoStream(video1).start()
 rightStream = VideoStream(video2).start()
 
@@ -49,8 +49,8 @@ while True:
     right = rightStream.read()
 
     # resize the frames while keeping height unchanged
-    left = imutils.resize(left, width=800)
-    right = imutils.resize(right, width=800)
+    left = imutils.resize(left, width=400)
+    right = imutils.resize(right, width=400)
 
     # stitch the frames together to form the panorama IMPORTANT: you might have to change this line of code
     # depending on how your cameras are oriented; frames should be supplied in left-to-right order
@@ -95,9 +95,9 @@ while True:
         cv2.FONT_HERSHEY_SIMPLEX, 0.35, (0, 0, 255), 1)
 
     # show the output images
-    cv2.imshow("Result", result)
     cv2.imshow("Left Frame", left)
     cv2.imshow("Right Frame", right)
+    cv2.imshow("Result", result)
     key = cv2.waitKey(1) & 0xFF
 
     # if the `q` key was pressed, break from the loop

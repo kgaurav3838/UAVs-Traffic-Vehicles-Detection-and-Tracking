@@ -1,14 +1,11 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Feb 27 21:07:08 2020
-
 @author: kumar
 """
-"""
-import sys
+"""  import sys
 sys.argv=['']
-del sys
-"""
+del sys  """
 
 import argparse
 

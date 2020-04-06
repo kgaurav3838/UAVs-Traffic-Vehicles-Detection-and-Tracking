@@ -1,0 +1,13 @@
+
+created:- (799,122) &  (1600,115): Diff=7  shape=(800,421)   ratio=1.9  Left: (0,114)  & (799,122) : Diff=8
+original:- (0,624)  & (4096,587): Diff=37  shape=(4096,2160)
+
+created :- (799,111) & (1370,103): Diff=8  left: (0,129)  & (799,111): Diff=18
+
+BFMatcher is going to try all the possibilities (which is the meaning of "Brute Force" and hence it will find the best matches.
+FLANN, meaning "Fast Library for Approximate Nearest Neighbors", will be much faster but will find an approximate nearest neighbors. 
+It will find a good matching, but not necessarily the best possible one. You can play with FLANN's parameters in order to increase the precision (i.e. the "quality" of the matchings), 
+but it will be at the cost of slowing the algorithm.
+
+In other words: FLANN is much faster than BFMatcher but it only finds an approximate nearest neighbor, which is a good matching but not necessarily the best. 
+You can play with the parameters of FLANN in order to increase its speed or its precision.

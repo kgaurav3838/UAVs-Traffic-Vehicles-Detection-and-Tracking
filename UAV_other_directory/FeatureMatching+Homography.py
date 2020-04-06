@@ -1,12 +1,15 @@
 import time
 
 import cv2
+import imutils
 import numpy as np
 
 MIN_MATCH_COUNT = 10
 start = time.time()
 img1 = cv2.imread('../images/left1.png', 0)  # queryImage
 img2 = cv2.imread('../images/right1.png', 0)  # trainImage
+img1 = imutils.resize(img1, width=800)
+img2 = imutils.resize(img2, width=800)
 
 # Initiate SIFT detector
 sift = cv2.xfeatures2d.SIFT_create()
@@ -20,7 +23,6 @@ index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
 search_params = dict(checks=50)
 
 flann = cv2.FlannBasedMatcher(index_params, search_params)
-
 matches = flann.knnMatch(des1, des2, k=2)
 
 # store all the good matches as per Lowe's ratio test.
